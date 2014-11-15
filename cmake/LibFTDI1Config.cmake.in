@@ -1,0 +1,53 @@
+#                                               -*- cmake -*-
+#
+#  LibBriteBlox1Config.cmake(.in)
+#
+#  Copyright (C) 2013 Intra2net AG and the libbriteblox developers
+#
+#  This file is part of LibBriteBlox.
+#
+#  LibBriteBlox is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU Lesser General Public License
+#  version 2.1 as published by the Free Software Foundation;
+#
+
+# Use the following variables to compile and link against LibBriteBlox:
+#  LIBBRITEBLOX_FOUND              - True if LibBriteBlox was found on your system
+#  LIBBRITEBLOX_USE_FILE           - The file making LibBriteBlox usable
+#  LIBBRITEBLOX_DEFINITIONS        - Definitions needed to build with LibBriteBlox
+#  LIBBRITEBLOX_INCLUDE_DIRS       - Directory where briteblox.h can be found
+#  LIBBRITEBLOX_INCLUDE_DIRS       - List of directories of LibBriteBlox and it's dependencies
+#  LIBBRITEBLOX_LIBRARY            - LibBriteBlox library location
+#  LIBBRITEBLOX_LIBRARIES          - List of libraries to link against LibBriteBlox library
+#  LIBBRITEBLOXPP_LIBRARY          - LibBriteBlox C++ wrapper library location
+#  LIBBRITEBLOXPP_LIBRARIES        - List of libraries to link against LibBriteBlox C++ wrapper
+#  LIBBRITEBLOX_LIBRARY_DIRS       - List of directories containing LibBriteBlox' libraries
+#  LIBBRITEBLOX_ROOT_DIR           - The base directory of LibBriteBlox
+#  LIBBRITEBLOX_VERSION_STRING     - A human-readable string containing the version
+#  LIBBRITEBLOX_VERSION_MAJOR      - The major version of LibBriteBlox
+#  LIBBRITEBLOX_VERSION_MINOR      - The minor version of LibBriteBlox
+#  LIBBRITEBLOX_VERSION_PATCH      - The patch version of LibBriteBlox
+#  LIBBRITEBLOX_PYTHON_MODULE_PATH - Path to the python module
+
+set ( LIBBRITEBLOX_FOUND 1 )
+set ( LIBBRITEBLOX_USE_FILE     "@LIBBRITEBLOX_USE_FILE@" )
+
+set ( LIBBRITEBLOX_DEFINITIONS  "@LIBBRITEBLOX_DEFINITIONS@" )
+set ( LIBBRITEBLOX_INCLUDE_DIR  "@LIBBRITEBLOX_INCLUDE_DIR@" )
+set ( LIBBRITEBLOX_INCLUDE_DIRS "@LIBBRITEBLOX_INCLUDE_DIRS@" )
+set ( LIBBRITEBLOX_LIBRARY      "@LIBBRITEBLOX_LIBRARY@" )
+set ( LIBBRITEBLOX_LIBRARIES    "@LIBBRITEBLOX_LIBRARIES@" )
+set ( LIBBRITEBLOX_STATIC_LIBRARY      "@LIBBRITEBLOX_STATIC_LIBRARY@" )
+set ( LIBBRITEBLOX_STATIC_LIBRARIES    "@LIBBRITEBLOX_STATIC_LIBRARIES@" )
+set ( LIBBRITEBLOXPP_LIBRARY    "@LIBBRITEBLOXPP_LIBRARY@" )
+set ( LIBBRITEBLOXPP_LIBRARIES  "@LIBBRITEBLOXPP_LIBRARIES@" )
+set ( LIBBRITEBLOX_LIBRARY_DIRS "@LIBBRITEBLOX_LIBRARY_DIRS@" )
+set ( LIBBRITEBLOX_ROOT_DIR     "@LIBBRITEBLOX_ROOT_DIR@" )
+
+set ( LIBBRITEBLOX_VERSION_STRING "@LIBBRITEBLOX_VERSION_STRING@" )
+set ( LIBBRITEBLOX_VERSION_MAJOR  "@LIBBRITEBLOX_VERSION_MAJOR@" )
+set ( LIBBRITEBLOX_VERSION_MINOR  "@LIBBRITEBLOX_VERSION_MINOR@" )
+set ( LIBBRITEBLOX_VERSION_PATCH  "@LIBBRITEBLOX_VERSION_PATCH@" )
+
+set ( LIBBRITEBLOX_PYTHON_MODULE_PATH "@LIBBRITEBLOX_PYTHON_MODULE_PATH@" )
+
