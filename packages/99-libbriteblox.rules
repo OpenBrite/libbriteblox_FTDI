@@ -1,0 +1,3 @@
+
+# Driver rules for the LEDgoes USB communicator (www.ledgoes.com)
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="7AD0", MODE="0664", GROUP="plugdev"

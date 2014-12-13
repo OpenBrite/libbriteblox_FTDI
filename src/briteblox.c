@@ -295,7 +295,7 @@ struct briteblox_version_info briteblox_get_library_version(void)
     Finds all briteblox devices with given VID:PID on the usb bus. Creates a new
     briteblox_device_list which needs to be deallocated by briteblox_list_free() after
     use.  With VID:PID 0:0, search for the default devices
-    (0x403:0x6001, 0x403:0x6010, 0x403:0x6011, 0x403:0x6014)
+    (0x403:0x7AD0)
 
     \param briteblox pointer to briteblox_context
     \param devlist Pointer where to store list of found devices
@@ -331,9 +331,7 @@ int briteblox_usb_find_all(struct briteblox_context *briteblox, struct briteblox
         if (((vendor != 0 && product != 0) &&
                 desc.idVendor == vendor && desc.idProduct == product) ||
                 ((vendor == 0 && product == 0) &&
-                 (desc.idVendor == 0x403) && (desc.idProduct == 0x6001 || desc.idProduct == 0x6010
-                                              || desc.idProduct == 0x6011 || desc.idProduct == 0x6014
-						|| desc.idProduct==0x7AD0)))
+                 (desc.idVendor == 0x403) && (desc.idProduct==0x7AD0)))
         {
             *curdev = (struct briteblox_device_list*)malloc(sizeof(struct briteblox_device_list));
             if (!*curdev)
@@ -2312,7 +2310,7 @@ int briteblox_eeprom_initdefaults(struct briteblox_context *briteblox, char * ma
     eeprom->use_serial = 1;
     if ((briteblox->type == TYPE_AM) || (briteblox->type == TYPE_BM) ||
             (briteblox->type == TYPE_R))
-        eeprom->product_id = 0x6001;
+        eeprom->product_id = 0x7AD0;
     else if (briteblox->type == TYPE_4232H)
         eeprom->product_id = 0x6011;
     else if (briteblox->type == TYPE_232H)

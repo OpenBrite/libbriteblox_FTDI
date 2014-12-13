@@ -25,7 +25,7 @@ int main(int argc, char **argv)
     }
 
     // Parse args
-    int vid = 0x0403, pid = 0x6010, tmp = 0;
+    int vid = 0x0403, pid = 0x7AD0, tmp = 0;
     for (int i = 0; i < (argc - 1); i++)
     {
         if (strcmp(argv[i], "-v") == 0)

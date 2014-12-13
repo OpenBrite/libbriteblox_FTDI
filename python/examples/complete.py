@@ -22,10 +22,10 @@ if britebloxc == 0:
     print('new failed: %d' % ret)
     os._exit(1)
 
-# try to list briteblox devices 0x6010 or 0x6001
-ret, devlist = briteblox.usb_find_all(britebloxc, 0x0403, 0x6010)
+# try to list briteblox devices 0x7AD0
+ret, devlist = briteblox.usb_find_all(britebloxc, 0x0403, 0x7AD0)
 if ret <= 0:
-    ret, devlist = briteblox.usb_find_all(britebloxc, 0x0403, 0x6001)
+    ret, devlist = briteblox.usb_find_all(britebloxc, 0x0403, 0x7AD0)
 
 if ret < 0:
     print('briteblox_usb_find_all failed: %d (%s)' %
@@ -47,7 +47,7 @@ while(curnode != None):
     i += 1
 
 # open usb
-ret = briteblox.usb_open(britebloxc, 0x0403, 0x6001)
+ret = briteblox.usb_open(britebloxc, 0x0403, 0x7AD0)
 if ret < 0:
     print('unable to open briteblox device: %d (%s)' %
           (ret, briteblox.get_error_string(britebloxc)))

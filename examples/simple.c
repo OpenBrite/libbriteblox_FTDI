@@ -25,7 +25,7 @@ int main(void)
         version.version_str, version.major, version.minor, version.micro,
         version.snapshot_str);
 
-    if ((ret = briteblox_usb_open(briteblox, 0x0403, 0x6001)) < 0)
+    if ((ret = briteblox_usb_open(briteblox, 0x0403, 0x7AD0)) < 0)
     {
         fprintf(stderr, "unable to open briteblox device: %d (%s)\n", ret, briteblox_get_error_string(briteblox));
         briteblox_free(briteblox);

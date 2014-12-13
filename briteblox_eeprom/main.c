@@ -117,7 +117,7 @@ int main(int argc, char *argv[])
         CFG_BOOL("use_serial", cfg_false, 0),
         CFG_BOOL("change_usb_version", cfg_false, 0),
         CFG_INT("usb_version", 0, 0),
-        CFG_INT("default_pid", 0x6001, 0),
+        CFG_INT("default_pid", 0x7AD0, 0),
         CFG_INT("max_power", 0, 0),
         CFG_STR("manufacturer", "Acme Inc.", 0),
         CFG_STR("product", "USB Serial Converter", 0),

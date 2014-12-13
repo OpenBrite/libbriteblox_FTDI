@@ -18,7 +18,7 @@ int main(int argc, char **argv)
         return EXIT_FAILURE;
     }
 
-    f = briteblox_usb_open(briteblox, 0x0403, 0x6001);
+    f = briteblox_usb_open(briteblox, 0x0403, 0x7AD0);
 
     if (f < 0 && f != -5)
     {

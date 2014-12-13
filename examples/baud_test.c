@@ -62,7 +62,7 @@ int main(int argc, char **argv)
     int set_baud;
     int datasize=100000;
 
-    char default_devicedesc[] = "i:0x0403:0x6001";
+    char default_devicedesc[] = "i:0x0403:0x7AD0";
     char *devicedesc=default_devicedesc;
     int txchunksize=256;
     enum briteblox_mpsse_mode test_mode=BITMODE_BITBANG;

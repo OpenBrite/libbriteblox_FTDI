@@ -36,8 +36,8 @@ sudo make install
 cd examples
 
 mcuee@Ubuntu1210VM:~/Desktop/build/libbriteblox/libbriteblox/build/examples$
-./find_all_pp  -v 0x0403 -p 0x6001
-Found devices ( VID: 0x403, PID: 0x6001 )
+./find_all_pp  -v 0x0403 -p 0x7AD0
+Found devices ( VID: 0x403, PID: 0x7AD0 )
 ------------------------------------------------
 BRITEBLOX (0x8730800): briteblox, usb serial converter, ftDEH51S (Open OK)
 BRITEBLOX (0x8730918): BRITEBLOX, FT232R USB UART, A8007Ub5 (Open OK)
@@ -78,7 +78,7 @@ Chip type 3 briteblox_eeprom_size: 128
 0x080: 2c 04 d3 fb 00 00 c9 bf  1c 80 42 00 00 00 00 00 ,....... ..B.....
 0x090: 00 00 00 00 00 00 00 00  38 41 32 52 4a 33 47 4f ........ 8A2RJ3GO
 VID:     0x0403
-PID:     0x6001
+PID:     0x7AD0 
 Release: 0x0000
 Bus Powered:  90 mA USB Remote Wake Up
 Manufacturer: BRITEBLOX

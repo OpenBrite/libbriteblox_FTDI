@@ -21,10 +21,10 @@ def main():
          (version_info.major, version_info.minor, version_info.micro,
           version_info.version_str, version_info.snapshot_str))
 
-    # try to open an briteblox 0x6010 or 0x6001
-    ret = briteblox.usb_open(context, 0x0403, 0x6010)
+    # try to open an briteblox 0x7AD0
+    ret = briteblox.usb_open(context, 0x0403, 0x7AD0)
     if ret < 0:
-        ret = briteblox.usb_open(context, 0x0403, 0x6001)
+        ret = briteblox.usb_open(context, 0x0403, 0x7AD0)
 
     print("briteblox.usb_open(): %d" % ret)
     print("briteblox.set_baudrate(): %d" % briteblox.set_baudrate(context, 9600))

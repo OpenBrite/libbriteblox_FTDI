@@ -2,7 +2,7 @@
 Device Type=6
 VID PID Type=0
 USB VID=0403
-USB PID=6001
+USB PID=7AD0
 [USB Power Options]
 Bus Powered=1
 Self Powered=0

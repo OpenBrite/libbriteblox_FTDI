@@ -58,7 +58,7 @@ usage(const char *argv0)
            "Options:\n"
            "\n"
            "Copyright (C) 2009 Micah Dowty <micah@navi.cx>\n"
-           "Adapted for use with libbriteblox (C) 2010 Uwe Bonnes <bon@elektron.ikp.physik.tu-darmstadt.de>\n",
+           "Adapted for use with libftdi/libbriteblox (C) 2010 Uwe Bonnes <bon@elektron.ikp.physik.tu-darmstadt.de>\n",
            argv0);
    exit(1);
 }
@@ -185,7 +185,7 @@ int main(int argc, char **argv)
        return EXIT_FAILURE;
    }
    
-   if (briteblox_usb_open_desc(briteblox, 0x0403, 0x6010, descstring, NULL) < 0)
+   if (briteblox_usb_open_desc(briteblox, 0x0403, 0x7AD0, descstring, NULL) < 0)
    {
        fprintf(stderr,"Can't open briteblox device: %s\n",briteblox_get_error_string(briteblox));
        briteblox_free(briteblox);

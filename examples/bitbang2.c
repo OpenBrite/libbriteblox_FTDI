@@ -65,7 +65,7 @@ int main(int argc, char **argv)
         return EXIT_FAILURE;
     }
 
-    if (briteblox_usb_open(briteblox, 0x0403, 0x6001) < 0)
+    if (briteblox_usb_open(briteblox, 0x0403, 0x7AD0) < 0)
         briteblox_fatal (briteblox, "Can't open briteblox device");
 
     if (briteblox_set_bitmode(briteblox, 0xFF, BITMODE_BITBANG) < 0)
